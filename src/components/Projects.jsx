@@ -28,7 +28,7 @@ const Project = () => {
   }
 
   return (
-  <div className="flex flex-col justify-center w-auto h-screen">
+  <div id="project" className="flex flex-col justify-center w-auto h-screen">
     <div className="flex flex-col justify-center items-center h-1/2">
       <h2 className='p-2'>{carousel[carouselIndex].title}{carouselIndex + 1}</h2>
       <div className="flex justify-center w-80">
