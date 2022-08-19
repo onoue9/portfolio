@@ -1,5 +1,5 @@
 const ContactMe = () => (
-  <div id="contact" className="flex content-center justify-center w-auto h-screen bg-sky5 bg-cover text-white">
+  <div id="contact" className="flex content-center justify-center w-auto h-screen bg-cyan-500 text-white">
     <div className="flex flex-col content-center justify-center w-1/3">
       <form className="flex flex-col content-center justify-center w-auto">
         <label>Name: </label><input type={"text"}/>

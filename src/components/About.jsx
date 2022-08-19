@@ -1,7 +1,7 @@
 import vivi from '../assets/vivi1.png'
 
 const About = () => (
-  <div id="about" className="flex flex-col justify-center text-center w-auto h-screen bg-sky3 bg-cover">
+  <div id="about" className="flex flex-col justify-center text-center w-auto h-screen bg-cyan-500">
       <span className="text-4xl w-1/2 h-auto self-center">About Me</span>
     <div className="flex flex-col overflow-auto bg-white border border-zinc-400 rounded-lg w-1/2 m-1 p-2 self-center">
       <p>Hi, my name is Fippe pra Onoue Melo. I have 28 years old. I'm from Duque de Caxias in Rio de Janeiro, Brazil.</p>
