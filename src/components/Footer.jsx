@@ -1,6 +1,6 @@
 const Footer = () => (
-  <footer className="flex justify-center p-2">
-    <span>Created by: Filipe Onoue</span>
+  <footer className="flex justify-center bg-cyan-500 bg-cover text-white">
+    <span className="text-xs">Created by: Filipe Onoue</span>
   </footer>
 )
 
