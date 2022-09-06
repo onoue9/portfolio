@@ -24,6 +24,11 @@
 npm install
 ```
 
+## Run
+```sh
+npm run dev
+```
+
 ## Author
 
 👤 **Filipe Onoue**
