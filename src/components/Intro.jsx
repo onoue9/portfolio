@@ -1,4 +1,4 @@
-import avatar from '../assets/avatar.png'
+import avatar from '../assets/avatar2.png'
 
 const Intro = () => (
   <div id="intro" className="flex w-screen h-screen justify-center content-center items-center">
