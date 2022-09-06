@@ -1,8 +1,18 @@
 {
-  "name": "github-io-home",
+  "name": "Portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Repositório do meu portfólio.",
+  "author": "Filipe Onoue",
+  "homepage": "https://onoue9.github.io/portfolio/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onoue9/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/onoue9/portfolio/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
