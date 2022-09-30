@@ -2,12 +2,12 @@ const ContactMe = () => (
   <div id="contact" className="flex content-center justify-center w-auto h-screen bg-cyan-500 text-white">
     <div className="flex flex-col content-center justify-center w-1/3">
       <form className="flex flex-col content-center justify-center w-auto">
-        <label>Name: </label><input type={"text"}/>
-        <label>Email: </label><input type={"text"}/>
-        <label>Subject: </label><input type={"text"}/>
-        <label>Message: </label><textarea className="text-black" placeholder="Type your msg here..."/>
+        <label>Name: </label><input className="rounded-md" type={"text"}/>
+        <label>Email: </label><input className="rounded-md" type={"text"}/>
+        <label>Subject: </label><input className="rounded-md" type={"text"}/>
+        <label>Message: </label><textarea className="rounded-md text-black" placeholder="Type your msg here..."/>
         <div className="flex justify-center self-center pt-5 w-1/5">
-          <button className="bg-sky-600 rounded-lg p-1">Send</button>
+          <button className="bg-sky-600 rounded-lg py-1 px-4 hover:bg-sky-700">Send</button>
         </div>
       </form>
     </div>

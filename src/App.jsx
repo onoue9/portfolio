@@ -6,7 +6,7 @@ import ContactMe from './components/ContactMe'
 import Footer from './components/Footer'
 
 const App = () => (
-    <div className='flex flex-col h-auto w-screen'>
+    <div className="flex flex-col h-auto w-full text-lg">
       <Header />
       <Intro />
       <About />
