@@ -1,6 +1,7 @@
 import trybewarts from '../assets/Project-Trybewarts.jpeg';
 import recipeApp from '../assets/Project-Recipe-App.jpeg';
 import { useState } from 'react';
+import nlwImage from '../assets/nlwImage.jpeg'
 
 const carousel = [
   {
@@ -15,6 +16,12 @@ const carousel = [
     url: "https://recipes-app-onoue9.herokuapp.com/",
     repo: "https://github.com/onoue9/project-recipes-app",
   },
+  {
+    title: 'Projet Nlw-eSports',
+    image: nlwImage,
+    url: "https://onoue9.github.io/nlw-esports-frontend/",
+    repo: "https://github.com/onoue9/nlw-esports-frontend",
+  }
 ];
 
 
@@ -36,27 +43,26 @@ const Project = () => {
   }
 
   return (
-  <div id="project" className="flex flex-col justify-center w-auto h-screen">
-    <div className="mt-4 flex flex-col justify-center items-center h-3/4">
-      <h2 className='p-2'>{carousel[carouselIndex].title}</h2>
-      <div className="flex flex-col justify-center items-center w-auto">
-        <div className="w-max h-max">
-          <img className="w-fit h-3/4 rounded-2xl"src={carousel[carouselIndex].image} alt={carousel[carouselIndex].title}/>
-        </div>
-        <li className="p-2 flex flex-col w-1/4 h-1/4 justify-center items-center">
-          <ul><a href={carousel[carouselIndex].url}>Demo Url</a></ul>
-          <ul><a href={carousel[carouselIndex].repo}>Repo Url</a></ul>
-        </li>
+  <div id="project" className="flex flex-col justify-center items-center">
+    <div className="flex flex-col gap-2 justify-center items-center">
+      <strong className="my-4 text-xl">{carousel[carouselIndex].title}</strong>
+      <img className="w-3/5 rounded-md"src={carousel[carouselIndex].image} alt={carousel[carouselIndex].title}/>
+      <div className="w-2/5 mt-4 flex flex-row justify-between text-center text-white text-lg">
+        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].url}>Demo Url</a>
+        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].repo}>Repo Url</a>
       </div>
     </div>
-    <div className="flex content-center items-center justify-center p-2 h-min">
+
+    <div className="w-1/5 flex flex-row justify-between items-center text-center my-8 text-white text-lg">
       <button
-        className='p-2'
+        className="w-20 bg-cyan-500 rounded-md hover:text-black"
         onClick={() => handlePrevButton() }
       >Prev</button>
-      <span className='p-2'>{carouselIndex + 1}</span>
+
+      <span className="w-20 bg-cyan-500 rounded-md">{carouselIndex + 1}</span>
+
       <button
-        className='p-2'
+        className="w-20 bg-cyan-500 rounded-md hover:text-black"
         onClick={() => handleNextButton() }
       >Next</button>
     </div>
