@@ -2,6 +2,7 @@ import trybewarts from '../assets/Project-Trybewarts.jpeg';
 import recipeApp from '../assets/Project-Recipe-App.jpeg';
 import { useState } from 'react';
 import nlwImage from '../assets/nlwImage.jpeg'
+import trybetubes from '../assets/project-trybetunes.jpeg';
 
 const carousel = [
   {
@@ -24,7 +25,7 @@ const carousel = [
   },
   {
     title: 'Project TrybeTunes',
-    image: '',
+    image: trybetunes,
     url: "https://onoue9.github.io/trybetunes",
     repo: "https://github.com/onoue9/trybetunes"
   }
