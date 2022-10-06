@@ -2,7 +2,7 @@ import trybewarts from '../assets/Project-Trybewarts.jpeg';
 import recipeApp from '../assets/Project-Recipe-App.jpeg';
 import { useState } from 'react';
 import nlwImage from '../assets/nlwImage.jpeg'
-import trybetubes from '../assets/project-trybetunes.jpeg';
+import trybetunes from '../assets/project-trybetunes.jpeg';
 
 const carousel = [
   {
@@ -55,8 +55,8 @@ const Project = () => {
       <strong className="my-4 text-xl">{carousel[carouselIndex].title}</strong>
       <img className="w-3/5 rounded-md"src={carousel[carouselIndex].image} alt={carousel[carouselIndex].title}/>
       <div className="w-2/5 mt-4 flex flex-row justify-between text-center text-white text-lg">
-        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].url}>Demo Url</a>
-        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].repo}>Repo Url</a>
+        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].url} target="_blank">Demo Url</a>
+        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].repo} target="_blank">Repo Url</a>
       </div>
     </div>
 
