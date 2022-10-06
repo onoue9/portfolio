@@ -21,6 +21,12 @@ const carousel = [
     image: nlwImage,
     url: "https://onoue9.github.io/nlw-esports-frontend/",
     repo: "https://github.com/onoue9/nlw-esports-frontend",
+  },
+  {
+    title: 'Project TrybeTunes',
+    image: '',
+    url: "https://onoue9.github.io/trybetunes",
+    repo: "https://github.com/onoue9/trybetunes"
   }
 ];
 
