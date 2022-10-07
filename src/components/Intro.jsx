@@ -1,15 +1,15 @@
 import avatar from '../assets/avatar2.png'
 
 const Intro = () => (
-  <div id="intro" className="flex w-screen h-screen justify-center content-center items-center">
-    <div className="flex flex-col text-center w-2/4">
+  <div id="intro" className="flex flex-col w-screen h-screen justify-center content-center items-center gap-10 sm:my-20 sm:w-full">
+    <div className="flex w-3/4 justify-center">
+      <img className="border-solid border-2 rounded-full self-center" src={avatar} alt="a picture of me" />
+    </div>
+    <div className="flex flex-col text-center">
       <span className="text-4xl">
-        Hi, i'm Filipe Onoue
+        Olá, eu sou Filipe
       </span>
       <span className="text-3x1">Fullstack Web Developer</span>
-    </div>
-    <div className="flex w-2/4 h-auto justify-center">
-      <img className="border-solid border-2 rounded-full w-2/4 h-3/4 self-center" src={avatar} alt="a picture of me" />
     </div>
   </div>
 )

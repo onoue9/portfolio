@@ -50,28 +50,28 @@ const Project = () => {
   }
 
   return (
-  <div id="project" className="flex flex-col justify-center items-center">
+  <div id="project" className="flex flex-col justify-center items-center my-20">
     <div className="flex flex-col gap-2 justify-center items-center">
-      <strong className="my-4 text-xl">{carousel[carouselIndex].title}</strong>
-      <img className="w-3/5 rounded-md"src={carousel[carouselIndex].image} alt={carousel[carouselIndex].title}/>
-      <div className="w-2/5 mt-4 flex flex-row justify-between text-center text-white text-lg">
-        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].url} target="_blank">Demo Url</a>
-        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].repo} target="_blank">Repo Url</a>
+      <strong className="mb-10 text-2xl sm:text-3xl">{carousel[carouselIndex].title}</strong>
+      <img className="w-5/6 rounded-md"src={carousel[carouselIndex].image} alt={carousel[carouselIndex].title}/>
+      <div className="mt-4 flex flex-row justify-between text-center text-white text-lg gap-4">
+        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].url} target="_blank">Demo</a>
+        <a className="w-24 bg-cyan-500 rounded-md hover:text-black" href={carousel[carouselIndex].repo} target="_blank">Repo</a>
       </div>
     </div>
 
-    <div className="w-1/5 flex flex-row justify-between items-center text-center my-8 text-white text-lg">
+    <div className="flex flex-row justify-between items-center text-center my-8 text-white text-lg gap-4">
       <button
-        className="w-20 bg-cyan-500 rounded-md hover:text-black"
+        className="w-20 bg-cyan-500 rounded-md"
         onClick={() => handlePrevButton() }
-      >Prev</button>
+      >Próximo</button>
 
       <span className="w-20 bg-cyan-500 rounded-md">{carouselIndex + 1}</span>
 
       <button
-        className="w-20 bg-cyan-500 rounded-md hover:text-black"
+        className="w-20 bg-cyan-500 rounded-md"
         onClick={() => handleNextButton() }
-      >Next</button>
+      >Anterior</button>
     </div>
   </div>
   )
