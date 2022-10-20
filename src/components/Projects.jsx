@@ -3,6 +3,7 @@ import recipeApp from '../assets/Project-Recipe-App.jpeg';
 import { useState } from 'react';
 import nlwImage from '../assets/nlwImage.jpeg'
 import trybetunes from '../assets/project-trybetunes.jpeg';
+import blockDestroyer from '../assets/block-destroyer.jpg'
 
 const carousel = [
   {
@@ -28,6 +29,12 @@ const carousel = [
     image: trybetunes,
     url: "https://onoue9.github.io/trybetunes",
     repo: "https://github.com/onoue9/trybetunes"
+  },
+  {
+    title: 'Project Block Destroyer',
+    image: blockDestroyer,
+    url: 'https://onoue9.github.io/block-destroyer-craftyjs/',
+    repo: 'https://github.com/onoue9/block-destroyer-craftyjs'
   }
 ];
 
