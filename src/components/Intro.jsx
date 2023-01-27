@@ -1,9 +1,10 @@
 import avatar from '../assets/avatar2.png'
+import '../style/animation.css'
 
 const Intro = () => (
   <div id="intro" className="flex flex-col w-screen h-screen justify-center content-center items-center gap-10 sm:my-20 sm:w-full">
     <div className="flex w-3/4 justify-center">
-      <img className="border-solid border-2 rounded-full self-center" src={avatar} alt="a picture of me" />
+      <img className="border-solid border-2 rounded-full self-center opacity-0 fadeIn" src={avatar} alt="a picture of me" />
     </div>
     <div className="flex flex-col text-center">
       <span className="text-4xl">
