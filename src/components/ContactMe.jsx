@@ -1,13 +1,37 @@
-const ContactMe = () => (
+import { useEffect } from "react";
+
+const ContactMe = () => {
+  useEffect(() => {
+    document.getElementById("contact-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      var form = event.target;
+      var xhr = new XMLHttpRequest();
+      xhr.open(form.method, form.action);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          // Formulário enviado com sucesso
+          alert("Obrigado pelo seu contato!");
+        } else {
+          // Erro ao enviar o formulário
+          alert("Ocorreu um erro, por favor tente novamente.");
+        }
+      };
+      xhr.send(new FormData(form));
+    });
+  }, [])
+
+  return (
   <div id="contact" className="flex flex-col items-center justify-center w-screen h-screen bg-cyan-500 text-white gap-4 sm:flex-row sm:w-full">
     <div className="flex flex-col items-center justify-center w-1/3">
-      <form className="flex flex-col justify-center">
-        <label>Nome: </label><input className="rounded-md" type={"text"}/>
-        <label>Email: </label><input className="rounded-md" type={"text"}/>
-        <label>Assunto: </label><input className="rounded-md" type={"text"}/>
-        <label>Mensagem: </label><textarea className="rounded-md text-black" placeholder="Escreva sua mensagem aqui..."/>
+      <form id="contact-form" action="https://formspree.io/f/xnqyjpag" method="post" className="flex flex-col justify-center">
+        <label>Nome: </label><input name="name" className="rounded-md text-black" type={"text"}/>
+        <label>Email: </label><input name="_replyto" className="rounded-md text-black" type={"email"}/>
+        <label>Assunto: </label><input name="_subject" className="rounded-md text-black" type={"text"}/>
+        <label>Mensagem: </label><textarea name="message" className="rounded-md text-black" placeholder="Escreva sua mensagem aqui..."/>
         <div className="flex justify-center self-center pt-5 w-1/5">
-          <button className="bg-sky-600 rounded-lg py-1 px-4 hover:bg-sky-700">Enviar</button>
+          <button type="submit" className="bg-sky-600 rounded-lg py-1 px-4 hover:bg-sky-700">Enviar</button>
         </div>
       </form>
     </div>
@@ -20,6 +44,6 @@ const ContactMe = () => (
       </div>
     </div>
   </div>
-)
+) }
 
 export default ContactMe;
