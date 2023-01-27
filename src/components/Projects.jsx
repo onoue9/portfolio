@@ -71,14 +71,14 @@ const Project = () => {
       <button
         className="w-20 bg-cyan-500 rounded-md"
         onClick={() => handlePrevButton() }
-      >Próximo</button>
+      >Anterior</button>
 
       <span className="w-20 bg-cyan-500 rounded-md">{carouselIndex + 1}</span>
 
       <button
         className="w-20 bg-cyan-500 rounded-md"
         onClick={() => handleNextButton() }
-      >Anterior</button>
+      >Próximo</button>
     </div>
   </div>
   )
