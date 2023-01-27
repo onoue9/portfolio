@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'slide-down': 'slide-down 1s ease-in-out'
+      },
       backgroundImage: {
         'wave1': "url('src/assets/wave1.jpg')",
         'wave2': "url('src/assets/wave2.jpg')",
