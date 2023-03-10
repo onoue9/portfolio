@@ -1,32 +1,27 @@
-/** @type {import('tailwindcss').Config} */ 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx}"],
+  mode: "jit",
   theme: {
     extend: {
-      animation: {
-        'slide-down': 'slide-down 1s ease-in-out'
+      colors: {
+        primary: "#050816",
+        secondary: "#aaa6c3",
+        tertiary: "#151030",
+        "black-100": "#100d25",
+        "black-200": "#090325",
+        "white-100": "#f3f3f3",
+      },
+      boxShadow: {
+        card: "0px 35px 120px -15px #211e35",
+      },
+      screens: {
+        xs: "450px",
       },
       backgroundImage: {
-        'wave1': "url('src/assets/wave1.jpg')",
-        'wave2': "url('src/assets/wave2.jpg')",
-        'blue1': "url('src/assets/blue1.jpg')",
-        'gray1': "url('src/assets/gray1.jpg')",
-        'sea1': "url('src/assets/sea1.jpg')",
-        'sea2': "url('src/assets/sea2.jpg')",
-        'sea3': "url('src/assets/sea3.jpg')",
-        'sky1': "url('src/assets/sky1.jpg')",
-        'sky2': "url('src/assets/sky2.jpg')",
-        'sky3': "url('src/assets/sky3.jpg')",
-        'sky4': "url('src/assets/sky4.jpg')",
-        'sky5': "url('src/assets/sky5.jpg')",
-        'cloud1': "url('src/assets/cloud1.jpg')",
-        'cloud2': "url('src/assets/cloud2.png')",
-        'vivi1': "url('src/assets/vivi1.png')",
-      }
+        "hero-pattern": "url('/src/assets/herobg.png')",
+      },
     },
   },
   plugins: [],
-}
+};
