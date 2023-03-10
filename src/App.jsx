@@ -1,19 +1,25 @@
-import Header from './components/Header'
-import Intro from './components/Intro'
-import About from './components/About'
-import Project from './components/Projects'
-import ContactMe from './components/ContactMe'
-import Footer from './components/Footer'
+import { BrowserRouter } from 'react-router-dom';
+
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 
 const App = () => (
-    <div className="flex flex-col h-auto w-full text-lg sm:text-2xl">
-      <Header />
-      <Intro />
-      <About />
-      <Project />
-      <ContactMe />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        {/* <Feedbacks /> */}
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
   )
 
 export default App
