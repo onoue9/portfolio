@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
         with:
-          args: '--legacy-peer-deps'
+          install-command: 'npm install --legacy-peer-deps'
 
       - name: Build project
         run: npm run build
