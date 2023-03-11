@@ -206,7 +206,7 @@ const projects = [
       },
     ],
     image: projectTrybetunes,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/onoue9/trybetunes",
   },
 ];
 
