@@ -16,7 +16,7 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  atom,
   tesla,
   shopify,
   projectTrybetunes,
@@ -118,7 +118,7 @@ const experiences = [
   {
     title: "Desenvolvedor Frontend React.js Freelancer",
     company_name: "AiCare",
-    icon: starbucks,
+    icon: atom,
     iconBg: "#383E56",
     date: "Novembro 2020 - Atual",
     points: [

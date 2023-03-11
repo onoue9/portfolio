@@ -23,7 +23,7 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+import atom from "./company/atom.png";
 import tesla from "./company/tesla.png";
 
 import projectTrybetunes from "./project-trybetunes.jpeg";
@@ -54,7 +54,7 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
+  atom,
   tesla,
   projectTrybetunes,
   nlw,
