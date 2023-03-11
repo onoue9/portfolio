@@ -120,7 +120,7 @@ const experiences = [
     company_name: "AiCare",
     icon: atom,
     iconBg: "#383E56",
-    date: "Novembro 2020 - Atual",
+    date: "Novembro 2022 - Atual",
     points: [
       "Implemento e refatoro páginas e componentes React.js",
       "Consumindo API's REST para alimentar os componentes",

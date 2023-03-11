@@ -45,7 +45,7 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         Eu sou um desenvolvedor de software Fullstack com experiência em Typescript e Javascript,
-        e especialista em frameworks com React, Node.js e Express. Formado pela Trybe desde Novembro de 2020,
+        e especialista em frameworks com React, Node.js e Express. Formado pela Trybe desde Novembro de 2022,
         estou a procura de uma oportunidade para poder colaborar com uma equipe e desenvolver minhas habilidades.
       </motion.p>
 
