@@ -1,51 +1,49 @@
-<h1 align="center">Welcome to My Portfolio 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/onoue9/portfolio#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/onoue9/portfolio/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://twitter.com/wolfonoue" target="_blank">
-    <img alt="Twitter: wolfonoue" src="https://img.shields.io/twitter/follow/wolfonoue.svg?style=social" />
-  </a>
-</p>
 
-> Repositório do meu portfólio.
+# Portfolio
 
-### 🏠 [Homepage](https://onoue9.github.io/portfolio/)
+Projecto de portfolio para falar um pouco sobre mim, minha vida profissional e meus projetos.
 
-### ✨ [Demo](https://onoue9.github.io/portfolio/)
+Foi desenvolvido na linguagem Javascript, com as ferramentas React com Vite, Three.js, Framer Motion e Tailwindcss.
 
-## Install
+Nele aprendi a renderizar modelos 3D com o Three.js utilizando Canvas, a criar animações com Framer Motion, estilizar os componentes com Tailwindcss facilitando a responsividade. Além de como utilizar essas ferramentas e bibliotecas, aprendi também sobre HOC.
 
-```sh
-npm install
+## Demonstração
+
+https://onoue9.github.io/portfolio/
+
+## Instalação
+
+Passo a passo para instalação e configuração do projeto.
+
+## Pré-requisitos
+
+- Node.js e NPM/Yarn instalados
+
+### 1. Faça o clone do repositório
+
+SSH:
+```bash
+  git clone git@github.com:onoue9/portfolio.git
+```
+HTTPS:
+```bash
+  git clone https://github.com/onoue9/portfolio.git
 ```
 
-## Run
-```sh
-npm run dev
+### 2. Instale as dependências
+
+Você precisará entrar em cada diretório, tanto do frontend como do backend para instalar as dependências
+
+```bash
+  npm install
 ```
 
-## Author
+### 3. Inicie o servidor
 
-👤 **Filipe Onoue**
+```bash
+  npm run dev
+```
 
-* Website: https://onoue9.github.io/portfolio/
-* Twitter: [@wolfonoue](https://twitter.com/wolfonoue)
-* Github: [@onoue9](https://github.com/onoue9)
-* LinkedIn: [@filipeonoue](https://linkedin.com/in/filipeonoue)
+## Stacks utilizadas
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/onoue9/portfolio/issues). You can also take a look at the [contributing guide](https://github.com/onoue9/portfolio/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-_
+React.js, Javascript, Three.js e Tailwindcss.
