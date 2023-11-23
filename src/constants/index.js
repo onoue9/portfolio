@@ -128,6 +128,19 @@ const experiences = [
       "Trabalho apartir de demandas fornecidas.",
     ],
   },
+  {
+    title: "Analista de Sistemas Web Jr",
+    company_name: "NIC.br",
+    icon: atom,
+    iconBg: '#383E56',
+    date: "Maio 2023 - Atual",
+    points: [
+      "Implemento sistemas em Node.js utilizando ferramentas como:",
+      "Next.js,. Nest.js, RabbitMQ, Keycloak, Docker.",
+      "Trabalho em equipe, participando de dailys e plannings,",
+      "E reuniões com os usuários para projetos."
+    ]
+  },
 ];
 
 const testimonials = [
